@@ -15,7 +15,10 @@ function fetchUsers() {
   let promise = fetch("https://jsonplaceholder.typicode.com/users");
   let promiseThatReturnsToObjects = promise.then(parseJSONToObjects);
   promiseThatReturnsToObjects.then(fillUsersDropDown);
+
 }
+
 window.onload = function () {
   fetchUsers();
 };
+
